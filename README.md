@@ -1,99 +1,95 @@
-# mizan-1st-day-in-s.s-
+# mizan-1st-day-in-s.s- you tube debug code
 website devoloper
-# For most projects, this workflow file will not need changing; you simply need
-# to commit it to your repository.
-#
-# You may wish to alter this file to override the set of languages analyzed,
-# or to provide custom queries or build logic.
-#
-# ******** NOTE ********
-# We have attempted to detect the languages in your repository. Please check
-# the `language` matrix defined below to confirm you have the correct set of
-# supported CodeQL languages.
-#
-name: "CodeQL Advanced"
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  schedule:
-    - cron: '30 21 * * 4'
-
-jobs:
-  analyze:
-    name: Analyze (${{ matrix.language }})
-    # Runner size impacts CodeQL analysis time. To learn more, please see:
-    #   - https://gh.io/recommended-hardware-resources-for-running-codeql
-    #   - https://gh.io/supported-runners-and-hardware-resources
-    #   - https://gh.io/using-larger-runners (GitHub.com only)
-    # Consider using larger runners or machines with greater resources for possible analysis time improvements.
-    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
-    permissions:
-      # required for all workflows
-      security-events: write
-
-      # required to fetch internal or private CodeQL packs
-      packages: read
-
-      # only required for workflows in private repositories
-      actions: read
-      contents: read
-
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-        # CodeQL supports the following values keywords for 'language': 'actions', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift'
-        # Use `c-cpp` to analyze code written in C, C++ or both
-        # Use 'java-kotlin' to analyze code written in Java, Kotlin or both
-        # Use 'javascript-typescript' to analyze code written in JavaScript, TypeScript or both
-        # To learn more about changing the languages that are analyzed or customizing the build mode for your analysis,
-        # see https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning.
-        # If you are analyzing a compiled language, you can modify the 'build-mode' for that language to customize how
-        # your codebase is analyzed, see https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    # Add any setup steps before running the `github/codeql-action/init` action.
-    # This includes steps like installing compilers or runtimes (`actions/setup-node`
-    # or others). This is typically only required for manual builds.
-    # - name: Setup runtime (example)
-    #   uses: actions/setup-example@v1
-
-    # Initializes the CodeQL tools for scanning.
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v4
-      with:
-        languages: ${{ matrix.language }}
-        build-mode: ${{ matrix.build-mode }}
-        # If you wish to specify custom queries, you can do so here or in a config file.
-        # By default, queries listed here will override any specified in a config file.
-        # Prefix the list here with "+" to use these queries and those in the config file.
-
-        # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
-        # queries: security-extended,security-and-quality
-
-    # If the analyze step fails for one of the languages you are analyzing with
-    # "We were unable to automatically build your code", modify the matrix above
-    # to set the build mode to "manual" for that language. Then modify this step
-    # to build your code.
-    # ℹ️ Command-line programs to run using the OS shell.
-    # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
-    - name: Run manual build steps
-      if: matrix.build-mode == 'manual'
-      shell: bash
-      run: |
-        echo 'If you are using a "manual" build mode for one or more of the' \
-          'languages you are analyzing, replace this with the commands to build' \
-          'your code, for example:'
-        echo '  make bootstrap'
-        echo '  make release'
-        exit 1
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v4
-      with:
-        category: "/language:${{matrix.language}}"
+{
+  "ns": "yt",
+  "el": "detailpage",
+  "cpn": "xbGu1Ezw5qpEDjuP",
+  "ver": 2,
+  "cmt": "97.078",
+  "fmt": "398",
+  "fs": "0",
+  "rt": "87.978",
+  "euri": "",
+  "lact": 2,
+  "cl": "910468478",
+  "mos": 0,
+  "state": "8",
+  "volume": 28,
+  "cbr": "Chrome",
+  "cbrver": "148.0.0.0",
+  "c": "WEB",
+  "cver": "2.20260508.01.00",
+  "cplayer": "UNIPLAYER",
+  "cos": "Windows",
+  "cosver": "10.0",
+  "cplatform": "DESKTOP",
+  "hl": "en_US",
+  "cr": "BD",
+  "len": "215.101",
+  "fexp": "v1,24004644,494889,14826321,11684381,53408,9105,22730,2821,106030,18644,77203,65,13917,26504,9252,3479,13030,6257,16949,69841,8206,2625,1904,18126,15105,20831,4228,4174,30447,18705,21437,4571,9877,1161,1978,16087,6621,2783,23826,9500,1840,1058,13725,3330,4361,1645,440,6962,2724,2606,8864,13160,453,1007,20060,10985,8777,15269,2364,941,895,457,954,2754,22127,2195,1626,6436,55,1539,6439,1954,1291,907,13463,11063,11493,346,2160,1699,1896,2613,2430,2411,1169,4,368,2171,643,2630,2315,1253,2429,92,2826,22,2117,7795,426,72302",
+  "feature": "g-high-rec",
+  "afmt": "251",
+  "muted": "0",
+  "docid": "PFka04nEi6w",
+  "ei": "rln_abCeOdeR3LUPkfeFiQw",
+  "plid": "AAZRZJY2RqmKSzFO",
+  "referrer": "https://www.youtube.com/",
+  "sdetail": "p:/",
+  "sourceid": "y",
+  "list": "RDPFka04nEi6w",
+  "of": "1NAQ7FoKWbgcIJ4XpQv7vA",
+  "vm": "CAIQABgEOjJBSHFpSlRJMHJjWkE2WUxXN0VlMzRVTlRzYlpMdDVpbThoQUxSZlVxVVVPbm1qdGdqZ2JoQUxkcUFQSjFqQnM5VXg4SXQxQmJTYkFZRlhSRzlNVFV6TzFsQkhiZFRFX2VTc3RUX1UxZlBld2pCNlE3cjFzSlkyM0otRWc1VDZERV9uQlZuWE85cDJsX3pfME1mVFBGSmRoWlBfRke4AQE",
+  "vct": "97.078",
+  "vd": "215.101",
+  "vpl": "0.000-3.491,8.491-9.251,14.251-97.078",
+  "vbu": "0.000-189.000",
+  "vbs": "0.000-215.101",
+  "vpa": "0",
+  "vsk": "0",
+  "ven": "0",
+  "vpr": "1",
+  "vrs": "4",
+  "vns": "2",
+  "vec": "null",
+  "vemsg": "",
+  "vvol": "0.15440381666688824",
+  "vdom": "1",
+  "vsrc": "1",
+  "vw": "1090",
+  "vh": "613",
+  "dvf": 9,
+  "tvf": 2682,
+  "lct": "96.960",
+  "lsk": false,
+  "lmf": false,
+  "lbw": "7774678.734",
+  "lhd": "0.110",
+  "lst": "314.219",
+  "laa": "itag_251_type_3_src_reslicemakeSliceInfosMediaBytes_segsrc_reslicemakeSliceInfosMediaBytes_seg_18_range_3172684-3173566_time_189.9-190.0_off_165296_len_883_end_1",
+  "lva": "itag_398_type_3_src_reslicemakeSliceInfosMediaBytes_segsrc_reslicemakeSliceInfosMediaBytes_seg_26_range_2891048-2917520_time_187.3-189.0_off_82329_len_26473_end_1",
+  "lar": "itag_251_type_3_src_reslicemakeSliceInfosMediaBytes_segsrc_reslicemakeSliceInfosMediaBytes_seg_18_range_3172684-3173566_time_189.9-190.0_off_165296_len_883_end_1",
+  "lvr": "itag_398_type_3_src_reslicemakeSliceInfosMediaBytes_segsrc_reslicemakeSliceInfosMediaBytes_seg_26_range_2891048-2917520_time_187.3-189.0_off_82329_len_26473_end_1",
+  "laq": "0",
+  "lvq": "0",
+  "lab": "0.000-190.001",
+  "lvb": "0.000-189.000",
+  "reqBlocked": "readaheadmet",
+  "lsrt": "6170",
+  "ismb": 2030000,
+  "relative_loudness": "5.180",
+  "optimal_format": "720p",
+  "user_qual": 720,
+  "release_version": "youtube.player.web_20260505_06_RC00",
+  "debug_videoId": "PFka04nEi6w",
+  "0sz": "false",
+  "op": "",
+  "yof": "false",
+  "dis": "",
+  "gpu": "ANGLE_(Intel,_Intel(R)_HD_Graphics_(0x00000152)_Direct3D11_vs_5_0_ps_5_0,_D3D11)",
+  "ps": "desktop-polymer",
+  "js": "/s/player/8fb635c2/player_es6.vflset/en_US/base.js",
+  "debug_playbackQuality": "hd720",
+  "debug_date": "Sat May 09 2026 22:00:07 GMT+0600 (Bangladesh Standard Time)",
+  "origin": "https://www.youtube.com",
+  "timestamp": 1778342407627
+}
